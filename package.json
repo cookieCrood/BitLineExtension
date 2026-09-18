@@ -1,0 +1,44 @@
+{
+    "name": "bitline",
+    "displayName": "BitLine",
+    "description": "Run BitLine programs",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "activationEvents": [
+        "onLanguage:bitline"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "bitline.run",
+                "title": "Run Bitline"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "bitline.run",
+                    "when": "editorLangId == bitline"
+                }
+            ]
+        },
+        "grammars": [
+            {
+                "language": "bitline",
+                "scopeName": "source.bitline",
+                "path": "./syntaxes/bitline.tmLanguage.json"
+            }
+        ],
+        "languages": [
+            {
+                "id": "bitline",
+                "aliases": ["BitLine"],
+                "extensions": [".bl"],
+                "configuration": "./language-configuration.json"
+            }
+        ]
+    }
+}
