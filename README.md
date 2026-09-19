@@ -16,8 +16,8 @@ This language (like many others) uses Braces `{}` and Semicolons `;`
 There are only 2 data types, you don't need more.
 
 ```
-bit
-byte
+bit (either a 0 or a 1)
+byte (a collection of 8 bits, initialize with [ eight 1 or 0 ])
 void (only functions)
 ```
 
