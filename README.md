@@ -3,6 +3,10 @@
 ## General
 Files of this language have the .bl extension
 
+Install the extension using the .vsix file in /build
+
+To run a .bl file run the "BitLine: Run" command in VSCode
+
 ## Usecases
 None (preferably)
 
