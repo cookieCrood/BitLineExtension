@@ -45,7 +45,7 @@
                     "name": "support.function.bitline"
                 },
                 {
-                    "match": "\\b(bit|byte)\\b",
+                    "match": "\\b(bit|byte|void)\\b",
                     "name": "storage.type.bitline"
                 },
                 {
@@ -53,7 +53,7 @@
                     "name": "keyword.operator.bitline"
                 },
                 {
-                    "match": "\\$",
+                    "match": "[\\$@]",
                     "name": "keyword.control.bitline"
                 },
                 {
